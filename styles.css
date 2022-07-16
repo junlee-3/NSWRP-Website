@@ -1,0 +1,226 @@
+/*color palette
+    hex(11151C) hsl(218,24%,9%)
+    hex(212D40) hsl(217,32%,19%)
+    hex(364156) hsl(219,23%,27%)
+    hex(7D4E57) hsl(349,23%,40%)
+    hex(D66853) hsl(10,62%,58%)
+*/
+@font-face {
+    font-family: 'Contemporary';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Contemporary'), local('Contemporary-Regular'), url('https://vicr123.com/assets/fonts/Contemporary-Regular-954a9a92658ecef6afca8dbccd5aab6d.ttf');
+}
+*{
+    color: white;
+    font-family: Contemporary;
+    margin-top: 0;
+}
+body{
+    margin: 0px;
+}
+
+.topnav p{
+    float: left;
+    margin-top: 14px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.topnav{
+    height: 48px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    align-items: center;
+    background-color: hsl(240,10%,15%);
+}
+/*following code copied from w3schools (https://www.w3schools.com/howto/howto_js_topnav.asp) (modified)*/
+.topnav a {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 3px;
+    padding: 11px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 10px;
+}
+/*w3schools code ends here*/
+.topnav .active {
+    background-color: hsl(10,62%,58%);
+}
+.topnav a:hover {
+    background-color: rgb(22, 22, 27);
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.19);
+}
+.topnav .active:hover {
+    background-color: hsl(10,62%,58%);
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.19);
+}
+.hero{
+    height: 500px;
+}
+#hero1{
+    background-image: url(nswrpbanner.png);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+}
+#hero2{
+    background-color: hsl(240,10%,11%);
+    height: 400px;
+}
+.heroheading{
+    padding-top: 210px;
+    margin-left: 30px;
+}
+.herosubheading{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.herominorheading{
+    margin-left: 30px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+.projectcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.githubcard{
+    height: 200px;
+    width: 350px;
+    background-color: hsl(240,20%,10%);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.githubprofilepic{
+    border-radius: 99999px;
+    height: 75px;
+    width: 75px;
+    margin-top: 20px;
+}
+.githubprojectlink{
+    text-decoration: none;
+}
+.githubprojectlink:hover{
+    color: hsl(10,62%,58%);
+}
+.aboutgithubproject{
+    font-size: 14px;
+    color: grey;
+}
+.footer{
+    background-color: hsl(240,10%,5%);
+    padding: 2% 0;
+    text-align: center;
+}
+.projectsmain{
+    background-color: hsl(240,10%,11%);
+    padding: 50px 10px;
+}
+.projectsmainflex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.projectsmainflex .githubcard{
+    margin: 15px;
+}
+.projectsmain h1{
+    margin-left: 10px;
+}
+.topbanner{
+    height: 100px;
+    background: hsl(10,62%,58%);
+    background: linear-gradient(32deg, hsl(10,62%,58%) 22%, hsl(10,62%,58%) 23%, hsl(349,23%,40%) 100%);
+    padding-top: 100px;
+    padding-left: 30px;
+}
+a{
+    text-decoration: none;
+}
+.socialsflex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.socialsitem{
+    margin-left: 25px;
+    display: flex;
+    align-items: end;
+    margin-bottom: 5px;
+}
+.mecredit{ /*:)*/
+    padding-top: 20px;
+
+}
+.mecredit a:hover{
+    color: hsl(10,62%,58%);
+}
+.socialsitem img{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.socialsitem:hover{
+    color: hsl(10,62%,58%);
+}
+#hero3{
+    background-color: hsl(240,10%,9%);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.image {
+    flex-basis: 40%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.image img{
+    border-radius: 70px;
+}
+.text {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #282a2d;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #282a2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4a4d52;
+    border: 2px solid #282a2d;
+    border-radius: 10px;
+}
+#hero4{
+    background-color: hsl(240,10%,9%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+}
